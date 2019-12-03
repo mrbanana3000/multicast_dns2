@@ -30,7 +30,7 @@ typedef NetworkInterfacesFactory = Future<Iterable<NetworkInterface>> Function(
 /// implementations of [RawDatagramSocket.bind].
 typedef RawDatagramSocketFactory = Future<RawDatagramSocket> Function(
     dynamic host, int port,
-    {bool reuseAddress, bool reusePort, int ttl});
+    {bool reuseAddress, int ttl});
 
 /// Client for DNS lookup and publishing using the mDNS protocol.
 ///
@@ -104,7 +104,6 @@ class MDnsClient {
     _incoming = await _rawDatagramSocketFactory(
       listenAddress.address,
       _mDnsPort,
-      reuseAddress: true,
       reusePort: true,
       ttl: 255,
     );
@@ -127,7 +126,6 @@ class MDnsClient {
       final RawDatagramSocket socket = await _rawDatagramSocketFactory(
         targetAddress,
         _mDnsPort,
-        reuseAddress: true,
         reusePort: true,
         ttl: 255,
       );
