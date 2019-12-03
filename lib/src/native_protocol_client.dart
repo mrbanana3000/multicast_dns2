@@ -4,7 +4,7 @@
 
 import 'dart:collection';
 
-import 'package:multicast_dns/src/resource_record.dart';
+import 'package:multicast_dns2/src/resource_record.dart';
 
 /// Cache for resource records that have been received.
 ///

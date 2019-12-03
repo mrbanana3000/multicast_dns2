@@ -7,8 +7,8 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:meta/meta.dart';
-import 'package:multicast_dns/src/constants.dart';
-import 'package:multicast_dns/src/packet.dart';
+import 'package:multicast_dns2/src/constants.dart';
+import 'package:multicast_dns2/src/packet.dart';
 
 // TODO(dnfield): Probably should go with a real hashing function here
 // when https://github.com/dart-lang/sdk/issues/11617 is figured out.
