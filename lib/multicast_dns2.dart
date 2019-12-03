@@ -104,7 +104,6 @@ class MDnsClient {
     _incoming = await _rawDatagramSocketFactory(
       listenAddress.address,
       _mDnsPort,
-      reusePort: true,
       ttl: 255,
     );
 
@@ -126,7 +125,6 @@ class MDnsClient {
       final RawDatagramSocket socket = await _rawDatagramSocketFactory(
         targetAddress,
         _mDnsPort,
-        reusePort: true,
         ttl: 255,
       );
       _sockets.add(socket);
