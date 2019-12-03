@@ -5,13 +5,13 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:multicast_dns/src/constants.dart';
-import 'package:multicast_dns/src/lookup_resolver.dart';
-import 'package:multicast_dns/src/native_protocol_client.dart';
-import 'package:multicast_dns/src/packet.dart';
-import 'package:multicast_dns/src/resource_record.dart';
+import 'package:multicast_dns2/src/constants.dart';
+import 'package:multicast_dns2/src/lookup_resolver.dart';
+import 'package:multicast_dns2/src/native_protocol_client.dart';
+import 'package:multicast_dns2/src/packet.dart';
+import 'package:multicast_dns2/src/resource_record.dart';
 
-export 'package:multicast_dns/src/resource_record.dart';
+export 'package:multicast_dns2/src/resource_record.dart';
 
 /// A callback type for [MDnsQuerier.start] to iterate available network
 /// interfaces.
